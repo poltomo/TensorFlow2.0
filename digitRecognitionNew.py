@@ -24,10 +24,7 @@ plt.colorbar()
 x_train = x_train/255.0
 x_test = x_test/255.0
 
-model = Sequential()
-model.add(Flatten(input_shape=(28,28)))
-model.add(Dense(128, activation="relu"))
-model.add(Dense(10, activation="softmax"))
+model = keras.models.load_model("/home/leopard/Documents/TensorFlow2.0/theModel")
 
 print(model.summary())
 
