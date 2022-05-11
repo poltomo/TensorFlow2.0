@@ -14,8 +14,8 @@ mnist = keras.datasets.mnist
 import numpy as np
 import matplotlib.pyplot as plt
 
-#print(np.min(x_train))
-#print(np.max(x_train))
+print(np.min(x_train))
+print(np.max(x_train))
 
 plt.figure()
 plt.imshow(x_train[0])
